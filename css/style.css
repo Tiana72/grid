@@ -27,9 +27,10 @@ p {
     margin: 0;
     padding: 0;
     letter-spacing: -1.1px;
-    line-height: 1.21;
+    line-height: 1.25;
     color: #666666;
     margin-top: 28px;
+    max-width: 550px;
 }
 .white-h2, .blue-p, .green-p, .dgray-p {
     color: #ffffff;
@@ -37,12 +38,16 @@ p {
 
 .blue-p {
     margin-bottom: 52px;
+    max-width: 520px;
 }
 .green-p {
     margin-bottom: 54px;
+    max-width: 520px;
+    margin-top: 34px;
 }
 .dgray-p {
     margin-bottom: 57px;
+    margin-top: 31px;
 }
 
 a {
@@ -74,13 +79,14 @@ a {
 }
 .grid {
     display: grid;
-    grid-template-areas: 
-    "a a a a"
-    "a a a a"
-    "b b c c"
-    "d e f g"
-    "h h j i"
-    "m m n n";
+    grid-template-areas:
+        "a a a a"
+        "a a a a"
+        "b b c c"
+        "d e f g"
+        "h h j i"
+        "m m n n";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-item {
     background-repeat: no-repeat;
@@ -90,7 +96,7 @@ a {
     background-image: url(../img/bg-main.png);
     grid-area: a;
     display: block;
-    padding: 271px 211px 344px;
+    padding: 271px 15px 344px 211px;
 }
 .grid-item-red {
     background-image: url(../img/bg-red.png);
@@ -102,7 +108,7 @@ a {
     background-color: #f3f1ef;
     grid-area: c;
     display: block;
-    padding: 108px 176px 119px 55px
+    padding: 108px 15px 119px 55px;
 }
 .grid-item-pic1 {
     background-image: url(../img/bg-one.png);
@@ -131,8 +137,7 @@ a {
 .grid-item-blue-text {
     grid-area: h;
     display: block;
-    padding: 120px 70px 118px 211px;
-
+    padding: 118px 15px 118px 211px;
 }
 .grid-item-pic5 {
     background-image: url(../img/bg-five.png);
@@ -153,12 +158,12 @@ a {
     color: #fff;
     grid-area: m;
     display: block;
-    padding: 133px 60px 162px 209px;
+    padding: 134px 15px 162px 209px;
 }
 .grid-item-gray {
     background-color: #282b2f;
     color: #fff;
     grid-area: n;
     display: block;
-    padding: 133px 150px 162px 58px;
+    padding: 136px 15px 162px 58px;
 }
